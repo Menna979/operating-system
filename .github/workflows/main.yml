@@ -12,9 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
 
-    steps: 
-      - name: 'testing actions'
-        run: pwd
+    steps:
+      - name: 'Printing folder contents before'
+        run: ls
 
-      - name: 'Printing'
-        run: echo Menna
+      - uses: actions/checkout@v3
+
+      - name: 'Printing folder contents after'
+        run: ls
+
+       
